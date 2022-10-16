@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <meta charset="UTF-8">
     <meta name="description" content="Современные велосипеды по отличным ценам">
     <meta content="велосипеды, магазин, веломагазин">
@@ -10,11 +11,11 @@
 <body>
 <header>
     <h1>Велошок</h1>
+    <q>Лучше велосипеда может быть только велосипед с "Велошока"</q>
+    <sub>(c) Ваш велошок</sub>
 </header>
 
 <main>
-    <q>Лучше велосипеда может быть только велосипед с "Велошока"</q>
-    <sub>(c) Ваш велошок</sub>
     <pre>
                                            $"   *.
                d$$$$$$$P"                  $    J
@@ -45,15 +46,19 @@
     </nav>
 
     <h2>Велосипеды</h2>
-    <article>
-        <h4>Горный супер велосипед</h4>
-        <p>Цена: 300$</p>
+    <article class="item">
+        <img src="images/mountain_bike.png">
+        <h4 class="item_name">Горный супер велосипед</h4>
+        <p class="item_description">Отличный велосипед для передвижения по пересечённой местности.</p>
+        <p class="item_price">Цена: 300$</p>
     </article>
 
     <h2>Аксессуары</h2>
-    <article>
-        <h4>Бутылка для воды</h4>
-        <p>Цена: 45$</p>
+    <article class="item">
+        <img src="images/water_bottle.png">
+        <h4 class="item_name">Бутылка для воды</h4>
+        <p class="item_description">Удобная, лёгкая бутылка. Сделана из перерабатываемого сырья!</p>
+        <p class="item_price">Цена: 45$</p>
     </article>
 
     <h2>Информация</h2>
@@ -76,8 +81,8 @@
 </main>
 
 <footer>
-    <section>
-        <h1>Контакты</h1>
+    <section id="footer_section">
+        <h2>Контакты</h2>
         <p>Телефон 8-(800)-555-35-35</p>
         <code>
             System.out.println("Заглядывайте к нам ещё!");
