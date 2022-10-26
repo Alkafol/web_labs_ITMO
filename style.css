@@ -5,12 +5,13 @@ body {
 
 .item {
     box-shadow: 5px 5px 5px 5px #B8D0E0;
-    width: 200px;
-    height: 350px;
     margin: 15px;
     padding: 15px;
     background-color: white;
     border-radius: 20px;
+    flex: 0 1 20%;
+    max-width: 300px;
+    min-width: 200px;
 }
 
 .item_name {
@@ -32,8 +33,19 @@ body {
     flex-wrap: wrap;
 }
 
-image {
-    padding: 100px;
+.menu_list{
+    display: flex;
+}
+
+.discount_list{
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -101,10 +113,18 @@ header {
     background-color: #B8D0E0;
     margin: 0 0 30px 0;
     box-shadow: 5px 5px 5px 15px #B8D0E0;
+    position: sticky;
+    top: 0;
 }
 
 pre {
     margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    pre {
+        display: none;
+    }
 }
 
 code {
