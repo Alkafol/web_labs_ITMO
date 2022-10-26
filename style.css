@@ -27,6 +27,11 @@ body {
     margin: 0;
 }
 
+.item_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 image {
     padding: 100px;
 }
@@ -78,7 +83,7 @@ footer {
 
 li {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 10px 0;
     padding: 3px 7px;
     width: 100px;
     list-style-type: none;
