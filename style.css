@@ -42,6 +42,23 @@ body {
     flex-direction: column;
 }
 
+.kids_discount{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 250px 500px;
+}
+
+.kid_discount_item:nth-child(4n), .kid_discount_item:nth-child(4n-1){
+    background-color: #D7E3F7;
+}
+
+.kid_discount_item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #00008B;
+    text-align: center;
+    padding: 10px;
+}
+
 img {
     display: block;
     margin-left: auto;
