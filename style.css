@@ -5,12 +5,13 @@ body {
 
 .item {
     box-shadow: 5px 5px 5px 5px #B8D0E0;
-    width: 200px;
-    height: 350px;
     margin: 15px;
     padding: 15px;
     background-color: white;
     border-radius: 20px;
+    flex: 0 1 20%;
+    max-width: 300px;
+    min-width: 200px;
 }
 
 .item_name {
@@ -27,8 +28,36 @@ body {
     margin: 0;
 }
 
-image {
-    padding: 100px;
+.item_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_list{
+    display: flex;
+}
+
+.kids_discount{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 250px 500px;
+}
+
+.delivery_grid_item:nth-child(4n), .delivery_grid_item:nth-child(4n-1){
+    background-color: #D7E3F7;
+}
+
+.delivery_grid_item{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #00008B;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -59,7 +88,6 @@ p {
 
 q {
     font-family: "Comic Sans MS", cursive ;
-    margin-left: 30px;
 }
 
 sub {
@@ -78,7 +106,7 @@ footer {
 
 li {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 10px 0;
     padding: 3px 7px;
     width: 100px;
     list-style-type: none;
@@ -96,10 +124,18 @@ header {
     background-color: #B8D0E0;
     margin: 0 0 30px 0;
     box-shadow: 5px 5px 5px 15px #B8D0E0;
+    position: sticky;
+    top: 0;
 }
 
 pre {
     margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    pre {
+        display: none;
+    }
 }
 
 code {
@@ -108,6 +144,8 @@ code {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
     margin-top: 10px;
     margin-bottom: 25px;
 }
@@ -115,6 +153,10 @@ section {
 article {
     margin-top: 15px;
     margin-bottom: 10px;
+}
+
+#delivery_article{
+    margin-top: 5px;
 }
 
 #footer_section{
