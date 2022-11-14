@@ -7,12 +7,14 @@
     <meta content="велосипеды, магазин, веломагазин">
     <title>Лучший магазин велосипедов!</title>
     <script src="scripts/active_menu.js" async></script>
+    <script src="scripts/load_time.js" async></script>
+    <script src="scripts/check_luck.js" async></script>
 </head>
 
 <body>
 <header>
     <section>
-        <h1>Велошок</h1>
+        <h1 id="shop_name">Велошок</h1>
     </section>
 </header>
 
@@ -26,7 +28,7 @@
         </ul>
     </nav>
 
-    <h2>Аксессуары</h2>
+    <h2 class = "page_name">Аксессуары</h2>
     <div class="item_list">
         <article class="item">
             <img src="images/water_bottle.png">
@@ -38,9 +40,9 @@
 </main>
 
 <footer>
-    <section>
+    <section id="footer_section">
         <h2>Контакты</h2>
-        <p>Телефон 8-(800)-555-35-35</p>
+        <p>Телефон 8-(911)-953-16-28</p>
     </section>
 </footer>
 </body>
