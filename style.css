@@ -3,6 +3,15 @@ body {
     background-color: #D7E3F7;
 }
 
+#header_section{
+    display: flex;
+}
+
+.favourite_image{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
 .item {
     box-shadow: 5px 5px 5px 5px #B8D0E0;
     margin: 15px;
@@ -71,12 +80,12 @@ body {
 
 .delivery_grid_item{
     background-color: white;
-    border: 1px solid #00008B;
+    border: 1.5px solid #83ADC9;
     text-align: center;
     padding: 10px;
 }
 
-img {
+.item_image {
     display: block;
     margin-left: auto;
     margin-right: auto;
