@@ -9,6 +9,7 @@
     <script src="scripts/active_menu.js" async></script>
     <script src="scripts/load_time.js" async></script>
     <script src="scripts/check_luck.js" async></script>
+    <script src="scripts/form_submission.js" async></script>
 </head>
 
 <body>
@@ -32,7 +33,16 @@
     </nav>
 
     <h2 class = "page_name">Избранное</h2>
-
+    <form id="favourites_form">
+        <div>
+            <label for="item">Добавьте товар в избранное:</label>
+        </div>
+        <div>
+            <input class="form_field" type="text" name="item" id="item" required>
+        </div>
+    </form>
+    <div id="favourite_list">
+    </div>
 </main>
 
 </body>

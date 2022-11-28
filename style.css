@@ -198,6 +198,28 @@ article {
     margin-top: 5px;
 }
 
+.favourites_delete_button{
+    margin-left: 40px;
+}
+
+.new_favourite_block{
+    display: flex;
+    margin-top: 10px;
+}
+
+.new_favourite_p{
+    width: 100px;
+    height: 35px;
+}
+
+.form_field{
+    margin-top: 10px;
+}
+
+#favourites_form{
+    margin-left: 20px;
+}
+
 
 
 
