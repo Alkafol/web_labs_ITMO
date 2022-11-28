@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <script src="scripts/active_menu.js" async></script>
     <script src="scripts/load_time.js" async></script>
     <script src="scripts/check_luck.js" async></script>
+    <script src="scripts/form_submission.js" async></script>
 </head>
 
 <body>
@@ -27,26 +28,22 @@
         <ul class="menu_list">
             <li id="bikes_button"><a href="index.html">Велосипеды</a></li>
             <li id="accessories_button"><a href="accessories.html">Аксессуары</a></li>
-            <li id="info_button"><a href="info.html">Информация</a></li>
+            <li><a href="info.html">Информация</a></li>
         </ul>
     </nav>
 
-    <h2 class = "page_name">Аксессуары</h2>
-    <div class="item_list">
-        <article class="item">
-            <img class="item_image" src="images/water_bottle.png">
-            <h4 class="item_name">Бутылка для воды</h4>
-            <p class="item_description">Удобная, лёгкая бутылка. Сделана из перерабатываемого сырья!</p>
-            <p class="item_price">Цена: 45$</p>
-        </article>
+    <h2 class = "page_name">Избранное</h2>
+    <form id="favourites_form">
+        <div>
+            <label for="item">Добавьте товар в избранное:</label>
+        </div>
+        <div>
+            <input class="form_field" type="text" name="item" id="item" required>
+        </div>
+    </form>
+    <div id="favourite_list">
     </div>
 </main>
 
-<footer>
-    <section id="footer_section">
-        <h2>Контакты</h2>
-        <p>Телефон 8-(911)-953-16-28</p>
-    </section>
-</footer>
 </body>
 </html>

@@ -1,9 +1,8 @@
 let button = document.createElement('button')
 button.textContent = 'Нажми и испытай удачу'
-button.style.marginLeft = '80%'
-button.style.lineHeight = '30px'
+button.style.height = '50px'
 
-let sticking_place = document.getElementById('shop_name')
+let sticking_place = document.getElementById('header_section')
 sticking_place.appendChild(button)
 
 button.onclick = function (){
